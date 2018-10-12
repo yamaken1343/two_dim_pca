@@ -15,7 +15,7 @@ def pca2dim(array, dim):
     eigen_value = eigen_value[idx]
     eigen_vector = eigen_vector[:, idx]  # 列ベクトルなことに注意する
     # 引数の次元数分戻す
-    return eigen_vector[:, :dim].T
+    return eigen_vector[:, :dim]
 
 
 def pca2dim2dim(array, dim):
